@@ -1,5 +1,9 @@
 FROM richarvey/nginx-php-fpm:latest
 
+# Install Node.js and npm
+RUN apk add --update nodejs npm
+
+# Copy Laravel application files
 COPY . .
 
 # Image config
