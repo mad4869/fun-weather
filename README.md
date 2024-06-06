@@ -62,6 +62,19 @@ After setting up the backend, the next step is to build the UI components using 
 1. User can get weather data for their current location after granting permission to access their location.
 2. User can get weather data for some other locations by inputting a location into the input field.
 
+### Getting current location's weather data
+
+![Asking permission to access location](./docs/ss%20(2).png)
+![Getting weather data after granting permission](./docs/ss%20(3).png)
+![Weather details](./docs/ss%20(4).png)
+
+The Geolocation browser API can only be accessed in a secure connection so I disabled a Chrome flag temporarily.
+
+### Getting other location's weather data
+
+![Getting weather data after inputting a location](./docs/ss%20(5).png)
+![Weather details](./docs/ss%20(1).png)
+
 ## Conclusion
 
 With the backend and frontend components in place, the Fun Weather app is ready to provide users with up-to-date weather information.
