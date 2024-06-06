@@ -1,13 +1,12 @@
 <?php
 
+use App\Actions\GetWeatherData;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-});
+Route::get('/', GetWeatherData::class)->name('home');
+Route::post('/', GetWeatherData::class)->name('home.post');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
